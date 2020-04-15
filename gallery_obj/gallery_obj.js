@@ -53,7 +53,7 @@ let portfolioProject = new Gallery(
 /* */    './images/test-1/test-1-4',
 /* */    'test-1',
 /* */     test_1,
-/* */    'https://www.google.de',
+/* */    'https://rinatshakirov.github.io/test-2.github.io/',
 /* */   'topA',
 /* */   'smallA',
 );
@@ -67,7 +67,7 @@ let aveShopProject = new Gallery(
 /* */    './images/test-2/test-2-4',
 /* */    'test-2',
 /* */     test_2,
-/* */    'https://www.vk.com',
+/* */    'https://rinatshakirov.github.io/test-3.github.io/',
 /* */   'topB',
 /* */   'smallB',
 );
@@ -95,7 +95,7 @@ let testProgect_4 = new Gallery(
 /* */    './images/test-4/test-4-4',
 /* */    'test-4',
 /* */     test_4,
-/* */    'https://www.vk.com',
+/* */    'https://rinatshakirov.github.io/test-5.github.io/',
 /* */   'topE',
 /* */   'smallE',
 );

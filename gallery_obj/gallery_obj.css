@@ -1,0 +1,290 @@
+/***********Module gallery start***********/
+.gallery-mask{
+    text-align: center;
+    padding:10px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    width:100%;
+    height:100%;
+    background:rgba(235, 235, 240, 0.562);
+    display:none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    user-select: none;
+    margin: 0 auto;
+}
+.gallery-mask span{
+    font-size:1.5rem;
+    margin:10px 10px;
+    cursor: pointer;
+    font-weight:600;
+}
+.active{
+    display:flex;
+}
+.gallery-slider{
+    width: 100%;
+    max-width:1100px;
+    margin: 0 auto;
+    min-height:100%;
+    position: relative;
+    box-shadow: 0 0 10px .9px black;
+    background: #1e1e1e;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.gallery-slider-wrapper-wrapp{
+    width:100%;
+    max-width:970px;
+    height:100%;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+    
+    background: #1e1e1e;
+    animation: heightMove 1s linear;
+}
+@keyframes heightMove{
+    from {
+        height:0%;
+    }
+    to{
+        height:100%;
+    }
+}
+.gallery-slider-wrapper{
+    display: flex;
+    align-items: center;
+    transition: all 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+    background: #1e1e1e;
+}
+.gallery-slider-wrapper h1{
+    font-size:1.3rem;
+    color:#EF9C6A;
+    text-align: center;
+    letter-spacing: 20px;
+}
+.gallery-slider-inner{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width:970px;
+    margin: 10px;
+    background: #1e1e1e;
+}
+.stop-element{
+    /* transition: transform 1s linear; */
+    transform: translate(0px,0px);
+}
+.project-bild{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    margin:0 auto;
+}
+.top-bild-wrapp{
+    width:780px;
+    height:370px;
+}
+.top-bild-show{
+    max-width:100%;
+    height:100%;
+    position: relative;
+    margin: 5px 5px;
+}
+.inform{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.inform h1{
+    font-size:1rem;
+    padding: 5px;
+    color:#EF9C6A;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.inform p, a{
+    font-size:.75rem;
+    padding:5px;
+}
+a{
+    color:#EF9C6A
+}
+.bild-project {
+    display: flex;
+    flex-direction: column;
+    max-width:350px;
+    position: relative;
+    z-index: 0;
+}
+.bild-project img{
+    width:200px;
+    height:100px;
+    cursor:pointer;
+    margin-bottom: 2px;
+}
+.bild-project img:hover{
+    border-left:3px solid #EF9C6A;
+}
+.sld-btn{
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+.sld-btn img{
+    cursor:pointer;
+    width:1.2rem;
+    position: relative;
+    z-index:0;
+}
+.sld-btn img:active{
+    transform: scale(1.5);
+}
+/***********Module gallery end***********/
+
+/***********Module lebenslauf***********/
+.lebenslauf-mod{
+    text-align: center;
+    padding:10px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    width:100%;
+    height:100%;
+    background:rgba(235, 235, 240, 0.562);
+    display:none;
+    justify-content: center;
+    overflow-y: scroll;
+    user-select: none;
+}
+.active{
+    display:block;
+}
+.wrapp_wrapp{
+    width: 100%;
+    max-width:700px;
+    margin: auto;
+    min-height:100%;
+    position: relative;
+    box-shadow: 0 0 10px .9px black;
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+.leben_wrapp .info h1{font-size: .8rem;font-weight:600;margin:5px 0;position:relative;display:inline;text-align:left;}
+.leben_wrapp p{font-size:.7rem;margin:10px;color:#898D8C;text-align:left;}
+.leben_wrapp span{color:#B77FDB;text-decoration:underline;font-size:.7rem;text-align:left;}
+.leben_wrapp .info h1:after{
+    content:'';
+    width: 100%;
+    height: 2px;
+    display:block;
+    background: #EF9C6A;
+    position: absolute;
+    bottom:-3px;
+    left:0;
+}
+.close-btn{
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+}
+.close-btn img{
+    position: relative;
+    z-index: 1;
+    cursor:pointer;
+    width:1.2rem;
+}
+.decor{
+    border: 1px solid #EF9C6A;
+    border-radius: 2px;
+    height: 100%;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    padding: 5px;
+    word-spacing: 20px;
+}
+.decor p{
+    color: #EF9C6A;
+    font-size: 1rem;
+}
+/*************Module lebenslauf end**************/
+@media all and (max-width:994px){
+    .gallery-slider-wrapper-wrapp{
+        overflow: none;
+        max-width: 994px;
+    }
+    .gallery-slider-wrapper{       
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        max-width: 994px;
+    }
+    .gallery-slider-inner{
+        widows: 100%;
+    }
+    .sld-btn{display: none;}
+
+    .project-bild{
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 994px;
+    }
+    .bild-project {
+        flex-direction: row;
+        max-width:994px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .bild-project img{
+        margin: 3px 3px;
+    }
+    .top-bild-wrapp{
+        width:100%;
+        height:20rem;
+    }
+    .inform{
+        width:100%;
+        max-width:600px
+    }
+    .wrapp_wrapp{
+        align-items: flex-start;
+    }
+}
+@media all and (max-width:480px){
+    .top-bild-wrapp{
+        height:15rem;
+    }
+    .leben_wrapp{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media all and (max-width:380px){
+    .top-bild-wrapp{
+        height:10rem;
+    }
+}
+

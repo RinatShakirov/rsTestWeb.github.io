@@ -228,7 +228,7 @@ body{
     cursor: pointer;
     transform: rotate(-2deg);
     user-select: none;
-    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, transparent, #0004);
+    /* -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, transparent, #0004); */
 }
 svg{
     transform:rotate(270deg);

@@ -6,7 +6,7 @@ window.addEventListener('load', ()=>{
     form.onsubmit = function(e){
         let error = false;
         for(let i = 0; i < input.length; i++){
-            if(input[i].value === ''|| input[i].value === ' ' || textarea.value === ''){
+            if(input[i].value === '' || textarea.value === ''){
                 input[i].classList.add('input-error');
                 textarea.classList.add('input-error');
                 error = true;

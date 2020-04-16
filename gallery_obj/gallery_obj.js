@@ -98,5 +98,5 @@ let testProgect_4 = new Gallery(
 /* */    'https://rinatshakirov.github.io/test-5.github.io/',
 /* */   'topE',
 /* */   'smallE',
-);
+); 
 testProgect_4.blockGallery();

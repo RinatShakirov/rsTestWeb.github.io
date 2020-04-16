@@ -50,14 +50,6 @@
     background: #1e1e1e;
     animation: heightMove 1s linear;
 }
-@keyframes heightMove{
-    from {
-        height:0%;
-    }
-    to{
-        height:100%;
-    }
-}
 .gallery-slider-wrapper{
     display: flex;
     align-items: center;
@@ -157,8 +149,8 @@ a{
 }
 /***********Module gallery end***********/
 
-/***********Module lebenslauf***********/
-.lebenslauf-mod{
+/***********Module ***********/
+/* .mod{
     text-align: center;
     padding:10px;
     position: fixed;
@@ -172,7 +164,7 @@ a{
     justify-content: center;
     overflow-y: scroll;
     user-select: none;
-}
+} */
 .active{
     display:block;
 }
@@ -226,7 +218,8 @@ a{
     color: #EF9C6A;
     font-size: 1rem;
 }
-/*************Module lebenslauf end**************/
+/************Module lebenslauf end*************/
+
 @media all and (max-width:994px){
     .gallery-slider-wrapper-wrapp{
         overflow: none;

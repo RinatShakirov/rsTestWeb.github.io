@@ -131,7 +131,7 @@ body{
 }
 .uber_mich_inner p:last-child{
     font-size: .8rem;
-    
+    line-height: 1.4;
 }
 .uber_mich_inner{
     width:100%;

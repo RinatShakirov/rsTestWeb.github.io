@@ -383,8 +383,8 @@ svg{
 .form_inner .img a:hover{color:white}
 
 form{
-    width: 18rem;
-    min-height:20rem;
+    width: 330px;
+    min-height:400px;
     box-shadow: 15px -15px 20px 5px black;
     border-radius: 10px;
     padding:20px 10px;
@@ -533,7 +533,18 @@ span{
         align-items: center;
     }
 }
-
+@media (max-width: 410px){
+    form{
+        width:250px;
+        min-height:300px;
+    }
+    input{
+        width:15rem;
+    }
+    textarea{
+        width:15rem;
+    }
+}
 
 
 
